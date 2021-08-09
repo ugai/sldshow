@@ -1,0 +1,40 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install stable toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+
+      - name: Build
+        uses: actions-rs/cargo@v1
+        with:
+          command: build
+          args: --release --verbose
+
+      # https://github.com/NSIS-Dev/github-action-examples
+      - name: Install NSIS
+        run: |
+          Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+          scoop bucket add extras
+          scoop install nsis
+      - name: Run NSIS
+        run: makensis ./setup/sldshow.nsi
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ./setup/*.exe

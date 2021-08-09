@@ -1,0 +1,42 @@
+[package]
+name = "sldshow"
+version = "0.1.0"
+authors = ["ugai <ugai.sub1@gmail.com>"]
+edition = "2018"
+
+description = "Simple slideshow image viewer."
+readme = "README.md"
+repository = "https://github.com/ugai/sldshow/"
+publish = false
+license = "MIT"
+keywords = ["image", "viewer", "slideshow", "graphics"]
+
+[dependencies]
+alphanumeric-sort = "1.4"
+anyhow = "1.0"
+bytemuck = { version = "1.7", features = ["derive"] }
+copypasta = "0.7"
+dirs = "3.0"
+flexi_logger = "0.18"
+font-kit = "0.10"
+futures = "0.3"
+image = "0.23"
+kamadak-exif = "0.5"
+log = "0.4"
+rand = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+stopwatch = "0.0"
+toml = "0.5"
+wgpu = "0.9"
+wgpu_glyph = "0.13"
+winit = "0.25"
+
+[target.'cfg(windows)'.dependencies]
+windows = "0.17"
+
+[target.'cfg(windows)'.build-dependencies]
+windows = "0.17"
+winres = "0.1"
+
+[profile.dev]
+opt-level = 2 # image-rs is very slow in opt-level 0

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46667 135.46667"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:export-filename="D:\git\eishakun\icon_16.png"
+   inkscape:export-xdpi="3"
+   inkscape:export-ydpi="3"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title908">sldshow icon</title>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="true"
+     inkscape:zoom="0.21313477"
+     inkscape:cx="-492.64604"
+     inkscape:cy="77.415806"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="-8"
+     inkscape:window-y="22"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g46" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path6147" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotL"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="DotL"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(7.4, 1)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         id="path6208" />
+    </marker>
+    <linearGradient
+       inkscape:collect="always"
+       id="Background">
+      <stop
+         style="stop-color:#100b00;stop-opacity:1"
+         offset="0"
+         id="stop2311" />
+      <stop
+         style="stop-color:#100b00;stop-opacity:1"
+         offset="0.06030036"
+         id="stop3933" />
+      <stop
+         style="stop-color:#739346;stop-opacity:1;"
+         offset="0.0906681"
+         id="stop7416" />
+      <stop
+         style="stop-color:#a7da6c;stop-opacity:1"
+         offset="0.24097377"
+         id="stop3225" />
+      <stop
+         style="stop-color:#efffc8;stop-opacity:1"
+         offset="0.54542762"
+         id="stop2711" />
+      <stop
+         style="stop-color:#a5cbc3;stop-opacity:1"
+         offset="0.78153425"
+         id="stop4319" />
+      <stop
+         style="stop-color:#a5cbc3;stop-opacity:1"
+         offset="1"
+         id="stop2313" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#Background"
+       id="linearGradient2317"
+       x1="66.677961"
+       y1="17.067218"
+       x2="94.699911"
+       y2="17.067218"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-97.756155,-97.756153)" />
+  </defs>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+       id="g46"
+       transform="matrix(1.1024306,0,0,1.1024306,-78.246962,-8.2636077)">
+      <g
+         id="g154"
+         transform="matrix(3.9697882,0,0,3.9697882,-187.90121,1.1825667)">
+        <rect
+           x="-30.254019"
+           y="-93.875732"
+           width="26.3736"
+           height="26.3736"
+           rx="0"
+           id="rect29"
+           style="fill:url(#linearGradient2317);fill-opacity:1;stroke:#100b00;stroke-width:1.64835;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           ry="1.3828155"
+           transform="matrix(0,-1,-1,0,0,0)" />
+        <line
+           x1="85.632355"
+           y1="10.473816"
+           x2="85.652122"
+           y2="10.473816"
+           id="line27-7"
+           style="fill:#a5cbc3;fill-opacity:1;stroke:#100b00;stroke-width:3.6273975;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <line
+           x1="85.634003"
+           y1="10.473816"
+           x2="85.650475"
+           y2="10.473816"
+           id="line27"
+           style="stroke-width:2.418265;stroke:#fffac8;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-opacity:1;fill:#a5cbc3;fill-opacity:1" />
+        <path
+           d="m 67.502139,22.012264 6.5934,-6.5934 a 4.94505,8.24175 0 0 1 4.94505,0 l 8.24175,8.24175"
+           id="path31"
+           style="stroke-width:1.33004575;stroke:#100b00;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-opacity:1;stroke-dashoffset:0;stroke-linecap:round" />
+        <path
+           d="m 83.985639,20.363914 1.64835,-1.64835 a 4.94505,8.24175 0 0 1 4.945034,0 l 3.2967,3.2967"
+           id="path33"
+           style="stroke-width:1.33004575;stroke:#100b00;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;stroke-opacity:1;stroke-dashoffset:0;stroke-linecap:round" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata854">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="https://github.com/tabler/tabler-icons/blob/master/LICENSE" />
+        <dc:title>sldshow icon</dc:title>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>This icon is derived from the &quot;Photo&quot; icon in the Tabler Icons.
+MIT License, Copyright (c) 2020 Paweł Kuna
+https://github.com/tabler/tabler-icons</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

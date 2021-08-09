@@ -1,0 +1,34 @@
+# sldshow file (.sldshow)
+
+[window]
+width = 1280
+height = 780
+fullscreen = false
+always_on_top = false
+titlebar = false
+resizable = false # only when the titlebar is enabled
+monitor_index = 0
+cursor_auto_hide = true
+
+[viewer]
+image_paths = ["C:\\hoge\\dir1", 'C:\hoge\dir2', '/home/hoge/fuga.jpg']
+timer = 10 # pause if value is zero
+scan_subfolders = true
+shuffle = true
+pause_at_last = false
+resize_filter = 'Linear' # ['Nearest', 'Linear', 'Cubic', 'Gaussian', 'Lanczos3']
+stop_screensaver = true
+cache_extent = 5 # preload the previous and next N files
+
+[transition]
+time = 0.5
+fps = 30.0
+random = true
+
+[style]
+bg_color = [0, 0, 0, 255] # RGBA [0, 255]
+text_color = [255, 255, 255, 255] # RGBA [0, 255]
+show_image_path = false
+font_name = 'UD デジタル 教科書体 N-R'
+font_size_osd = 18.0
+font_size_image_path = 12.0
