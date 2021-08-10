@@ -1,3 +1,6 @@
+
+
+
 # sldshow
 
 ![CI](https://github.com/ugai/sldshow/actions/workflows/ci.yml/badge.svg)
@@ -9,6 +12,8 @@ Simple slideshow image viewer.
 - toml configuration/playlist file
 - fixed-size, frameless window
 - random transition effects
+
+https://user-images.githubusercontent.com/3608128/128846670-41f33682-89ff-4bda-8703-3d374b24f032.mp4
 
 ## Supported platforms
 
