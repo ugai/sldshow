@@ -13,7 +13,7 @@ Simple slideshow image viewer.
 - fixed-size, frameless window
 - random transition effects
 
-https://user-images.githubusercontent.com/3608128/128846670-41f33682-89ff-4bda-8703-3d374b24f032.mp4
+https://user-images.githubusercontent.com/3608128/134453085-19f2a90c-da6c-40a4-99d0-6e97ab4bd595.mp4
 
 ## Supported platforms
 
