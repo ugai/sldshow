@@ -22,6 +22,7 @@ pub struct ImageCache {
 pub struct Size2d<T> {
     pub width: T,
     pub height: T,
+    pub scale_factor: Option<f64>,
 }
 
 impl From<PhysicalSize<u32>> for Size2d<u32> {
@@ -29,6 +30,7 @@ impl From<PhysicalSize<u32>> for Size2d<u32> {
         Self {
             width: size.width,
             height: size.height,
+            scale_factor: None,
         }
     }
 }
@@ -308,7 +310,29 @@ impl ImageLoader {
         let time_exif_orientation = sw.elapsed_ms();
 
         sw.restart();
-        let img = img.resize(size.width, size.height, filter_type).to_rgba8();
+        let logical_width = match size.scale_factor {
+            Some(scale_factor) => {
+                if scale_factor > 0.0 {
+                    (size.width as f64) / scale_factor
+                } else {
+                    size.width as f64
+                }
+            }
+            None => (size.width as f64),
+        } as u32;
+        let logical_height = match size.scale_factor {
+            Some(scale_factor) => {
+                if scale_factor > 0.0 {
+                    (size.height as f64) / scale_factor
+                } else {
+                    size.height as f64
+                }
+            }
+            None => (size.height as f64),
+        } as u32;
+        let img = img
+            .resize(logical_width, logical_height, filter_type)
+            .to_rgba8();
         let time_resize = sw.elapsed_ms();
 
         log::info!(

@@ -112,6 +112,7 @@ fn main() -> Result<()> {
     let window_size = Size2d {
         width: conf.window.width,
         height: conf.window.height,
+        scale_factor: None,
     };
     let resize_filter = convert_filter_type(&conf.viewer.resize_filter);
 
@@ -152,7 +153,8 @@ fn main() -> Result<()> {
         .with_decorations(conf.window.titlebar);
     let main_window = Rc::new(builder.build(&event_loop)?);
     let inner_size = Size2d::from(main_window.inner_size());
-    let texture_size = inner_size;
+    let mut texture_size = inner_size;
+    texture_size.scale_factor = main_window.scale_factor().into();
 
     // Set main window position
     if let Some(target_monitor) = main_window

@@ -745,11 +745,18 @@ impl State {
             }
 
             // Write image pixels
-            let pad_left = (gfx.texture_size.width - src_image.width()) / 2;
-            let pad_top = (gfx.texture_size.height - src_image.height()) / 2;
-            for (x, y, pixel) in src_image.enumerate_pixels() {
-                gfx.diffuse_image_temp
-                    .put_pixel(pad_left + x, pad_top + y, *pixel);
+            let src_height = src_image.height();
+            let src_width = src_image.width();
+            let dst_width = gfx.texture_size.width;
+            let dst_height = gfx.texture_size.height;
+            let pad_left = dst_width.saturating_sub(src_width) / 2;
+            let pad_top = dst_height.saturating_sub(src_height) / 2;
+            for (src_x, src_y, pixel) in src_image.enumerate_pixels() {
+                let dst_x = pad_left + src_x;
+                let dst_y = pad_top + src_y;
+                if dst_x < dst_width && dst_y < dst_height {
+                    gfx.diffuse_image_temp.put_pixel(dst_x, dst_y, *pixel);
+                }
             }
 
             loader.current_path = image_cache.path.clone();
