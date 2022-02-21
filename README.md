@@ -1,6 +1,4 @@
 
-
-
 # sldshow
 
 ![CI](https://github.com/ugai/sldshow/actions/workflows/ci.yml/badge.svg)
