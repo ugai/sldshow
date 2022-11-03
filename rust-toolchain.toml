@@ -1,0 +1,3 @@
+[toolchain]
+profile = "default"
+channel = "1.63.0" # can't build the wgpu-core v0.9 on Rust 1.64 or later
