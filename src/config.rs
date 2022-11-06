@@ -112,7 +112,7 @@ impl Default for Style {
     }
 }
 
-#[derive(Debug, Serialize, Deserialize, Clone, Copy, PartialEq)]
+#[derive(Debug, Serialize, Deserialize, Clone, Copy, PartialEq, Eq)]
 pub enum ResizeFilterType {
     Nearest,
     Linear,
