@@ -24,11 +24,11 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
         run: sudo apt-get update && sudo apt install libxcb-shape0-dev libxcb-render0-dev libxcb-xfixes0-dev libxkbcommon-dev
 
-      - name: Install stable toolchain
+      - name: Install Rust toolchain
         uses: actions-rs/toolchain@v1
         with:
           profile: minimal
-          toolchain: stable
+          toolchain: 1.63.0
           override: true
           components: rustfmt, clippy
 
