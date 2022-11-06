@@ -41,8 +41,9 @@ pub fn set_window_to_center(window: &Window, monitor_handle: &MonitorHandle) {
     let monitor_topleft = monitor_handle.position();
     let monitor_size = monitor_handle.size();
     let pos = PhysicalPosition {
-        x: monitor_topleft.x + ((monitor_size.width - window_size.width) as i32 / 2),
-        y: monitor_topleft.y + ((monitor_size.height - window_size.height) as i32 / 2),
+        x: monitor_topleft.x + ((monitor_size.width.saturating_sub(window_size.width)) as i32 / 2),
+        y: monitor_topleft.y
+            + ((monitor_size.height.saturating_sub(window_size.height)) as i32 / 2),
     };
     window.set_outer_position(pos);
 }
